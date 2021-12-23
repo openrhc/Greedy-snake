@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="wrap">
+        <div id="stage"></div>
+        <div class="ui">
+            <div class="ui_mask"></div>
+            <div class="score">贪吃蛇</div>
+            <div class="start_btn btn" onclick="game.start()">开始游戏</div>
+            <div style="display: none;" class="restart_btn btn" onclick="game.restart()">重新开始</div>
+        </div>
+        <input id="skin" type="file" style="display: none;" onchange="handleSkinChange(this)">
+        <label for="skin" class="skin">
+            <div class="tail"></div>
+            <div class="body"></div>
+            <div class="head"></div>
+            <div class="div empty"></div>
+            <div class="food"></div>
+        </label>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
